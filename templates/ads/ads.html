@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+
+    <h2 class="text-success text-center py-4">Ads</h2>
+
+    <div class="row">
+        {% for ad in ads %}
+        <div class="col-4 py-4">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-body">
+                        <p class="card-text">{{ ad.title }}</p>
+                        <hr>
+                        <img src="{{ ad.files.url }}" height="300" class="card-img">
+                        <hr>
+                            <a class="btn btn-outline-success" href="{{ ad.files.url }}" target='_blank'>Show</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+       
+    </div>
+
+</div>
+
+{% endblock %}

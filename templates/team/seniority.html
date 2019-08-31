@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <h2 class="text-center text-success py-4">SENIORITY LISTS AS ON FEBRUARY 2018</h2>
+        <div class="row">
+            {% for seniority in senioritys %}
+            <div class="col-4 py-4">
+                    <div class="card" style="width: 20rem;">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ seniority.title }}</h4>
+                            <hr>
+                                <a class="btn btn-outline-success" href="{{ seniority.files.url }}" target='_blank'>Show</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+           
+        </div>
+
+    </div>
+
+{% endblock %}

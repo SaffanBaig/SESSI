@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center text-success py-5">MEMBERS GOVERNING BODY SESSI</h1>
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <!-- <th>Position</th> -->
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if teams %}
+        {% for team in teams %}
+        <tr>
+            <th scope="row">{{team.id}}</th>
+            <td class="border">{{ team.name }}</td>
+            <!-- <td>{{ team.position }}</td> -->
+            <td class="border" >{{ team.description }}</td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        
+    </tbody>
+</table>
+</div>
+{% endblock %}
+
+

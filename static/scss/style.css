@@ -1,0 +1,52 @@
+.navbar {
+  box-shadow: 2px 2px 5px;
+  opacity: 0.9;
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem; }
+
+#banner {
+  position: relative;
+  min-height: 600px; }
+  #banner .success-overlay {
+    background: rgba(31, 142, 104, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#square .btn-big {
+  font-size: 1.5rem; }
+
+#gallery {
+  /* Create four equal columns that sits next to each other */
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ }
+  #gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px; }
+  #gallery .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px; }
+  #gallery .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%; }
+  @media screen and (max-width: 800px) {
+    #gallery .column {
+      flex: 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 600px) {
+    #gallery .column {
+      flex: 100%;
+      max-width: 100%; } }
+
+#main-footer {
+  background: #1f8e68;
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

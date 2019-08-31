@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'partials/_titlebox.html' %}
+
+  <div class="container py-4" id="history">
+  <h1 class="text-center py-4">Our History</h1>
+    <p class="lead text-center">In Pakistan, Social Security Scheme was launched on 1st March, 1967, under West Pakistan Employees' Social Security Ordinance No. X of 1965, with the assistance of the International Labour Organization. The Sindh Employees' Social Security Institution (SESSI), however, came into being on 1st July, 1970 when the Scheme was reorganized on provincial basis after the dissolution of One-Unit. Initially, the Scheme was designed for coverage of textile industry workers of Karachi and Hyderabad.
+       On getting encouraging results later on the Scheme was extended to all other industries and commercial units.</p>
+  </div>
+  <section class="py-4" id="about_sessi">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>What is SESSI</h1>
+            <p>SESSI is an autonomous body, the general direction and superintendence of the affairs of the Institution vest in a tripartite Governing Body. In its functioning,
+               the Institution is guided by such instructions on questions of policy as may be given to it from time to time by the Government.</p>
+            <p>SESSI is a service oriented organization. The function of the Institution is unique in nature for the welfare of labour class.
+               It aims at providing medical care facilities and cash benefits to the secured workers and their dependants.</p>
+          </div>
+          <div class="col-md-6">
+            <img src="{% static 'images/about_sessi.jpg' %}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="add_benefits">
+    <div class="row py-4">
+      <div class="col-md-6"><h1 class="text-center py-4">Administration</h1>
+        <p class="text-justify">The general direction and superintendence of the affairs of the Institution vest in a tripartite Governing Body.
+           In its functioning, the Institution is guided by such instructions on questions of policy as may be given to it from time to time by the Government.</p>
+      </div>
+      <div class="col-md-6"><h1 class="text-center py-4">Cash Benefits</h1>
+      <p class="text-justify">Under Social Security Scheme secured workers are entitled to cash sickness benefit,
+         injury benefit, maternity benefit, iddat benefit, disablement gratuity, disablement pension, ex-gratia grant and dependants get survivors' pension and death grant.</p>
+      </div>
+    </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <img src="{% static 'images/about_sessi2.jpg' %}" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+                </div>
+            <div class="col-md-6">
+              <h1>Medical Care</h1>
+              <p>Medical care occupies the most significant place in the services of SESSI more than  70% of its budget is spent on providing medical care facilities to the secured workers and their dependants.
+                  SESSI has made elaborate arrangement for providing these facilities.
+              </p>
+              <p>
+                  All the medical outlets are manned with qualified & experienced doctors and paramedical staff and equipped with latest instruments. Branded medicines, which purchased from reputed pharmaceutical firms are supplied to the dispensaries for providing needy secured workers and their dependants.
+              </p>
+               </div>
+            
+          </div>
+        </div>
+      </section>
+{% endblock %}
